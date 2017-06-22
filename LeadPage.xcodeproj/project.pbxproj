@@ -14,6 +14,12 @@
 		7479265B1D20C36B009BEF40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747926591D20C36B009BEF40 /* LaunchScreen.storyboard */; };
 		747926661D20C36C009BEF40 /* LeadPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747926651D20C36C009BEF40 /* LeadPageTests.swift */; };
 		747926711D20C36C009BEF40 /* LeadPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747926701D20C36C009BEF40 /* LeadPageUITests.swift */; };
+		747926801D20C39F009BEF40 /* LeadPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479267F1D20C39F009BEF40 /* LeadPageViewController.swift */; };
+		747926821D20C3B9009BEF40 /* LeadPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747926811D20C3B9009BEF40 /* LeadPageCell.swift */; };
+		747926881D20C3D7009BEF40 /* first@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 747926841D20C3D7009BEF40 /* first@2x.jpeg */; };
+		747926891D20C3D7009BEF40 /* fourth@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 747926851D20C3D7009BEF40 /* fourth@2x.jpeg */; };
+		7479268A1D20C3D7009BEF40 /* second@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 747926861D20C3D7009BEF40 /* second@2x.jpeg */; };
+		7479268B1D20C3D7009BEF40 /* three@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 747926871D20C3D7009BEF40 /* three@2x.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		7479266C1D20C36C009BEF40 /* LeadPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeadPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		747926701D20C36C009BEF40 /* LeadPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadPageUITests.swift; sourceTree = "<group>"; };
 		747926721D20C36C009BEF40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7479267F1D20C39F009BEF40 /* LeadPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadPageViewController.swift; sourceTree = "<group>"; };
+		747926811D20C3B9009BEF40 /* LeadPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadPageCell.swift; sourceTree = "<group>"; };
+		747926841D20C3D7009BEF40 /* first@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first@2x.jpeg"; sourceTree = "<group>"; };
+		747926851D20C3D7009BEF40 /* fourth@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourth@2x.jpeg"; sourceTree = "<group>"; };
+		747926861D20C3D7009BEF40 /* second@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "second@2x.jpeg"; sourceTree = "<group>"; };
+		747926871D20C3D7009BEF40 /* three@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "three@2x.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,8 @@
 		7479264F1D20C36B009BEF40 /* LeadPage */ = {
 			isa = PBXGroup;
 			children = (
+				747926831D20C3D7009BEF40 /* images */,
+				7479267E1D20C38C009BEF40 /* MyLeadPage */,
 				747926501D20C36B009BEF40 /* AppDelegate.swift */,
 				747926521D20C36B009BEF40 /* ViewController.swift */,
 				747926541D20C36B009BEF40 /* Main.storyboard */,
@@ -123,6 +137,26 @@
 				747926721D20C36C009BEF40 /* Info.plist */,
 			);
 			path = LeadPageUITests;
+			sourceTree = "<group>";
+		};
+		7479267E1D20C38C009BEF40 /* MyLeadPage */ = {
+			isa = PBXGroup;
+			children = (
+				7479267F1D20C39F009BEF40 /* LeadPageViewController.swift */,
+				747926811D20C3B9009BEF40 /* LeadPageCell.swift */,
+			);
+			path = MyLeadPage;
+			sourceTree = "<group>";
+		};
+		747926831D20C3D7009BEF40 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				747926841D20C3D7009BEF40 /* first@2x.jpeg */,
+				747926851D20C3D7009BEF40 /* fourth@2x.jpeg */,
+				747926861D20C3D7009BEF40 /* second@2x.jpeg */,
+				747926871D20C3D7009BEF40 /* three@2x.jpeg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +227,16 @@
 				TargetAttributes = {
 					7479264C1D20C36B009BEF40 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					747926601D20C36C009BEF40 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7479264C1D20C36B009BEF40;
 					};
 					7479266B1D20C36C009BEF40 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7479264C1D20C36B009BEF40;
 					};
 				};
@@ -231,7 +268,11 @@
 			files = (
 				7479265B1D20C36B009BEF40 /* LaunchScreen.storyboard in Resources */,
 				747926581D20C36B009BEF40 /* Assets.xcassets in Resources */,
+				747926891D20C3D7009BEF40 /* fourth@2x.jpeg in Resources */,
+				7479268B1D20C3D7009BEF40 /* three@2x.jpeg in Resources */,
 				747926561D20C36B009BEF40 /* Main.storyboard in Resources */,
+				7479268A1D20C3D7009BEF40 /* second@2x.jpeg in Resources */,
+				747926881D20C3D7009BEF40 /* first@2x.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747926821D20C3B9009BEF40 /* LeadPageCell.swift in Sources */,
+				747926801D20C39F009BEF40 /* LeadPageViewController.swift in Sources */,
 				747926531D20C36B009BEF40 /* ViewController.swift in Sources */,
 				747926511D20C36B009BEF40 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LeadPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -416,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LeadPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LeadPageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeadPage.app/LeadPage";
 			};
 			name = Debug;
@@ -439,6 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LeadPageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeadPage.app/LeadPage";
 			};
 			name = Release;
@@ -450,6 +497,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LeadPageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LeadPage;
 			};
 			name = Debug;
@@ -461,6 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LeadPageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LeadPage;
 			};
 			name = Release;
@@ -484,6 +533,7 @@
 				747926771D20C36C009BEF40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747926781D20C36C009BEF40 /* Build configuration list for PBXNativeTarget "LeadPageTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +542,7 @@
 				7479267A1D20C36C009BEF40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7479267B1D20C36C009BEF40 /* Build configuration list for PBXNativeTarget "LeadPageUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +551,7 @@
 				7479267D1D20C36C009BEF40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
